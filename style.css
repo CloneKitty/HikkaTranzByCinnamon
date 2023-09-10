@@ -99,7 +99,7 @@ nav .ham-burger{
         width: auto;
         height: auto;
         flex-direction: column;
-        background-color: rgba(255, 249, 249, 0.339);
+        background-color: rgba(255, 249, 249, 0.744);
         overflow: hidden;
         transition: all .5s ease-in-out;
     }
@@ -1613,14 +1613,15 @@ bookform{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color:#DFCCFB
+    background-image: url(book-back.jpg);
+    background-repeat: repeat;
 }
 .book_container{
     margin-top: 10%;
     position: relative;
     max-width: 80%;
     width: 100%;
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.431);
     padding: 25px;
     border-radius: 8px;
 }
