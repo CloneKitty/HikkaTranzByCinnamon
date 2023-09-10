@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Patrick+Hand&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: #F7FBFC;
+    animation: background 15S ease-in infinite;
+}
+@keyframes background {
+    0%{
+    background-color:#F8F0E5 ;    
+    }
+    25%{
+    background-color: #EADBC8;
+    }
+    50%{
+    background-color: #DAC0A3;
+    }
+    75%{
+    background-color: #FFF3DA;
+    }
+    
+}
+@media screen and (max-width: 990px){
+    html,body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        font-family: sans-serif;
+    }  
+}
+
+/* Navigation Bar - Desktop view */
+nav {
+  position:fixed;
+  z-index: 10;
+left: 0;
+  right: 0;
+  top: 0;
+  font-family: 'Rubik', sans-serif;
+  padding-top: 1%;
+  height: auto;
+  background-image: url(rose.gif);
+  background-size: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+nav .logo{
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition:1s ease;
+    justify-content: center;
+}
+nav .logo img:hover{
+    transform: scale(110%);
+    transition: 1s ease;  
+}
+/*Nav bar buttons*/
+nav .links{
+    float: right;
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f212276;
+}
+nav .links a{
+    display:block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 1s ease;
+}
+nav .links a:hover{
+    color: #ff00f2;
+    letter-spacing: 10px;
+    transition: 1s ease;
+}
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+nav .ham-burger{
+    display: none;
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    transform: translate(-50%);
+}
+/* Navigation Bar - Mobile view */
+
+@media screen and (max-width: 990px){
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+        
+    }
+    nav .links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 15%;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        background-color: #4cb4e13d;
+        overflow: hidden;
+        transition: all 1s ease-in-out;
+    }
+    nav .links a{
+        font-size: 2.5vw;
+    }
+    nav .ham-burger{
+        display: block;
+    }
+    nav :checked ~ .links{
+        bottom: 0;
+    }
+}
+
+                                                                              /*Image slider*/
+
+.img-main-desktop{
+
+    width: 100%;
+    position: relative;
+}
+.img-main-mobile{
+    display: none;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    background-color: rgba(0, 0, 0, 0.67);
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: auto;
+    animation: animateovrflw 3s 1 linear ;
+}
+@keyframes animateovrflw {
+from{
+opacity: 0;
+}
+to{
+opacity: 1;
+}
+    
+    }    
+slider h2{
+    text-align: center;
+    font-family: passion one;
+    color: #F6416C;
+    font-size: clamp(20px,3.0vw,250px);
+    letter-spacing: 2%;
+    animation: maintext1 17s infinite linear;
+}
+@keyframes maintext1 {
+    0%{
+        color: #E8A0BF;
+            }
+            25%{
+        color: #A6D0DD;
+            }
+            50%{
+        color: #FF6969;
+             }    
+            75%{
+        color: #FFD3B0;
+                    }
+            100%{
+        color: #FFF9DE;
+                            }
+}
+slider p{
+    text-align: center;
+    font-family: patrick hand;
+    font-weight: 500;
+    font-size: clamp(15px,1.8vw,150px);
+    color: #ffffff;
+}
+/* Slider Main image mobile view*/
+@media screen and (max-width: 990px){
+    .img-main-desktop{
+        display: none;
+    }
+    .img-main-mobile{
+        display:flex;
+        width: 100%;
+        position: relative;
+    }
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        background-color: rgba(0, 0, 0, 0.534);
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+}
+                                                                              /*Outdoor Garden*/
+/*Prom*/
+.prom{
+    height: auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+/*Prom-image*/
+.prom-img{
+    height: auto;
+    width: 90%;
+    margin-right: 0;
+}
+/*Prom-content*/
+.prom-content{
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2%;
+}
+.prom-content h2{
+    text-align: center;
+    font-family: passion one;
+    font-size: clamp(20px,2.8vw,250px);
+    color: #F6416C;
+    animation: textani1 10s ease-in-out 5s 1 ;
+}
+@keyframes textani1 {
+    from{
+        letter-spacing: 20px;
+    }
+    to{
+        letter-spacing: 0px;
+    }
+    
+}
+.prom-content p{
+    text-align: center;
+    font-family: patrick hand;
+    font-weight: 500;
+    font-size: clamp(15px,1.6vw,150px);
+}
+                                                            /*Arrangement*/
+/*Masquerade*/
+.masquerade{
+    height: auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/*Masquerade-image*/
+.masquerade-img{
+    height: auto;
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+}
+/*Masquerade-content*/
+.masquerade-content{
+    height: auto;
+    width: 100%;
+    padding: 2%;
+}
+.masquerade-content h2{
+    text-align: center;
+    font-family: passion one;
+    font-size: clamp(20px,2.8vw,250px);
+    color: #00B8A9;
+    animation: textani2 10s ease-in-out 10s 1 ;
+}
+@keyframes textani2 {
+    from{
+        letter-spacing: 20px;
+    }
+    to{
+        letter-spacing: 0px;
+    }
+    
+}
+
+.masquerade-content p{
+    text-align: center;
+    font-family: patrick hand;
+    font-weight: 500;
+    font-size: clamp(15px,1.6vw,150px);
+}
+
+                                                            /*Honeymoon*/
+/*lounge*/
+.lounge{
+    height: auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/*lounge-image*/
+.lounge-img{
+    height: auto;
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+}
+/*lounge-content*/
+.lounge-content{
+    height: auto;
+    width: 100%;
+    background-color: #ffffff5a;
+    padding: 2%;
+}
+.lounge-content h2{
+    text-align: center;
+    font-family: passion one;
+    font-size: clamp(20px,2.8vw,250px);
+    color: #892CDC;
+    animation: textani3 10s ease-in-out 15s 1 ;
+}
+@keyframes textani3 {
+    from{
+        letter-spacing: 20px;
+    }
+    to{
+        letter-spacing: 0px;
+    }
+    
+}
+.lounge-content p{
+    text-align: center;
+    font-family: patrick hand;
+    font-weight: 500;
+    font-size: clamp(15px,1.6vw,150px);
+}
+                                                                              /*Back to top*/
+html{
+    scroll-behavior: smooth;
+}  
+.scroll-up-bt img{
+    position: fixed;
+    bottom: 5%;
+    margin-left: 95%;
+    transition: 0.5s ease-out;
+    display: flex;
+}
+.scroll-up-bt img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}                                                      
+                                                                              /*Footer*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.083);
+    height: auto;
+    width: 100%;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 52%;
+    margin-right: 48%;
+    flex-direction:column;
+    transition: 1s ease;
+}
+.footer-logo:hover{
+    transform: scale(0.8);
+    transition: 1s ease;  
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+} 
+.social{
+    list-style:none;
+    display: flex;
+    align-items: center;
+   
+    margin-right: 5%;
+    margin:auto;
+}
+.social li{
+    margin:0 10px;
+    transition: 1s ease;
+}
+.social li:hover{
+    transform: scale(1.5);
+    transition: 1s ease;  
+}
+.footer-bottom{
+    background-color: rgba(205, 204, 206, 0.423);
+    height: auto;
+    text-align: center;
+    font-size: clamp(10px,1.5vw,150px); 
+    justify-content: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:15px;
+}
+                                                                              /*Back to top*/
+html{
+    scroll-behavior: smooth;
+}  
+.scroll-up-bt img{
+    position: fixed;
+    bottom: 5%;
+    margin-left: 95%;
+    transition: 0.5s ease-out;
+    display: flex;
+}
+.scroll-up-bt img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}                                                      
+
+                                                                              /*Footer*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.083);
+    height: auto;
+    width: 100%;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 52%;
+    margin-right: 48%;
+    flex-direction:column;
+    transition: 1s ease;
+}
+.footer-logo:hover{
+    transform: scale(0.8);
+    transition: 1s ease;  
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+} 
+.social{
+    list-style:none;
+    display: flex;
+    align-items: center;
+   
+    margin-right: 5%;
+    margin:auto;
+}
+.social li{
+    margin:0 10px;
+    transition: 1s ease;
+}
+.social li:hover{
+    transform: scale(1.5);
+    transition: 1s ease;  
+}
+.footer-bottom{
+    background-color: rgba(205, 204, 206, 0.423);
+    height: auto;
+    text-align: center;
+    font-size: clamp(10px,1.5vw,150px); 
+    justify-content: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:15px;
+}

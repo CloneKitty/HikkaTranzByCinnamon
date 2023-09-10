@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Favicons-->
+     <link rel="apple-touch-icon" sizes="180x180" href="Resource\favicon\apple-touch-icon.png  ">
+     <link rel="icon" type="image/png" sizes="32x32" href="Resource\favicon\favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="Resource\favicon\favicon-16x16.png">
+     <link rel="manifest" href="Resource\favicon\manifest.json">
+     <link rel="mask-icon" href="Resource\favicon\safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<!--Navigation bar-->
+<nav>
+    <input id="nav-toggle" type="checkbox">
+        <section class="logo"><a href="Homepage.html"><img src="Resource\Homepage\logo.png" width="85" alt="logo"></a></section>
+        <section class="links">
+            <a href="Accomadation.html">ACCOMMODATION</a>
+            <a href="Hotels.html">HOTEL</a>
+           <a href="Experience.html">EXPERIENCE</a>
+           <a href="Resturant.html">RESTURANT</a>
+         <a href="Booking.html">BOOKING</a> 
+        </section>
+        <label for="nav-toggle" class="ham-burger"><img src="Resource\Homepage\hamburger-menu.png" width="40">
+        </label>
+ </nav>
+ <!--Cinamon grand colombo-->
+<cin-gc>
+    <section class="cin-gc-img"><img src="Resource\Hotels\cin_grand_cmb.jpg" width="100%" alt="cinnamon grand colombo.img"></section>
+    <section class="cin-gc-data">
+        <h2>Cinnamon Grand Colombo</h2>
+        <p>Do you go to events in the capital city for business? Let the lavishness of our conference rooms and meeting spaces permeate your successful business relationships. After you have thoroughly enjoyed your great successes, retire to your room and indulge in the luxurious pleasures that Colombo's most opulent business hotel has to offer.</p>
+    </section>
+</cin-gc>
+    <cin-gc-map><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.080141008128!2d79.848553!3d6.9180734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25940ed9b9633%3A0xb0658168859e3c0e!2sCinnamon%20Grand%20Colombo!5e0!3m2!1sen!2slk!4v1693095955143!5m2!1sen!2slk" width="100%" height="300rem"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></cin-gc-map>
+
+<!--Cinnamon wild yala-->
+
+<cin-wil-yal>
+   
+    <section class="cin-wil-yal-data">
+        <h2>Cinnamon Wild Yala</h2>
+        <p>Are you eager to visit a location where you can encounter both stunning natural scenery and wildlife? In reality, we arrange for romantic dinners to be served on a deck by the lake under a starry sky, and we promise you that it is lovely. Be unique; this is the best location to organize a lovely gathering that everyone will remember forever. Come where the wild meets our souls. </p>
+    </section>
+    <section class="cin-wil-yal-img"><img src="Resource\Hotels\cin_yala.jpg" width="100%" alt="cinnamon wild yala.img"></section>
+</cin-wil-yal>
+    <cin-wil-yal-map><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.137233492529!2d81.4043716!3d6.2592112!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae6838ccf68584b%3A0xa3f1e22d226b6311!2sCinnamon%20Wild%20Yala!5e0!3m2!1sen!2slk!4v1693096351296!5m2!1sen!2slk" width="100%" height="300rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></cin-wil-yal-map>
+<!--Trinco blue cinnamon-->
+
+<cin-tri>    
+    <section class="cin-tri-img"><img src="Resource\Hotels\cin_trinc.jpg" width="100%" alt="cinnamon blu trinco.img"></section>
+    <section class="cin-tri-data">
+        <h2>Trinco Blu Cinnamon</h2>
+        <p>How about a memorable trip to a location by the sea, distant from those enormous mountains? Take a holiday from the perspective of a deck-bound skipper. You'll go there to observe grey dolphin pods diving in unison as if it were a choreographed performance at their breakfast buffet.</p>
+    </section>
+</cin-tri>
+    <cin-tri-map><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.7703698843297!2d81.21711289999999!3d8.618031199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afbbc4f703f9129%3A0xd0e81da5a378b1d6!2sTrinco%20Blu%20by%20Cinnamon!5e0!3m2!1sen!2slk!4v1693096504889!5m2!1sen!2slk" width="100%" height="300rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></cin-tri-map>
+<!--Table-->
+<hotels-table>
+    <table>
+        <caption>
+            Our Branches
+        </caption>
+        <thead>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Image</th>
+        </thead>
+        <tr>
+         <td data-cell="name">Cinnamon Grand Colombo</td>
+        <td data-cell="location">Colombo</td>
+        <td data-cell="image"><img src="Resource\Hotels\cin_grand_cmb.jpg" width="50%" alt="cinnamon grand colombo.img"></td>
+        </tr>
+
+        <tr>
+            <td data-cell="name">Cinnamon Wild Yala</td>
+           <td data-cell="location">Yala</td>
+           <td data-cell="image"><img src="Resource\Hotels\cin_yala.jpg" width="50%" alt="cinnamon wild yala.img"></td>
+           </tr>
+
+           <tr>
+            <td data-cell="name">Trinco Blu Cinnamon</td>
+           <td data-cell="location">Trincomalee</td>
+           <td data-cell="image"><img src="Resource\Hotels\cin_trinc.jpg" width="50%" alt="cinnamon blu trinco.img"></td>
+           </tr>
+        <tfoot>
+            <th colspan="3">
+                <p>Cinnamon Hotels & Resorts is a broad hotel group with properties in the Maldives and Sri Lanka. It is a part of John Keells Holdings PLC, the biggest publicly traded company in Sri Lanka with interests in plantations, consumer food & retail, financial services, information technology, transportation, and leisure.</p>
+            </th>
+        </tfoot>
+
+    </table>
+</hotels-table>
+
+‌<!--Footer-->
+<footer>
+    <section class="footer-logo"><a href="Homepage.html"><img src="Resource\Homepage\logo.png" width="95" alt="footer"></a></section>
+    <section class="footer-content">
+       <ul class="social">
+        <li><a href="https://www.facebook.com/HikkaTranzbyCinnamon/"><img src="Resource\Social\facebook.png" width="30" alt="facebook"></a></li>
+        <li><a href="https://www.instagram.com/hikkatranzbycinnamon/"><img src="Resource\Social\instagram.png" width="30" alt="instagram"></a></li>
+        <li><a href="https://www.tripadvisor.com/Hotel_Review-g304134-d579245-Reviews-Hikka_Tranz_by_Cinnamon-Hikkaduwa_Galle_District_Southern_Province.html"><img src="Resource\Social\tripadvisor.png" width="30" alt="tripadvisor"></a></li>
+        <li><a href="https://twitter.com/CinnamonHotels"><img src="Resource\Social\twitter.png" width="30" alt="twitter"></a></li>
+        <li><a href="https://www.youtube.com/@CinnamonHotelsandResorts"><img src="Resource\Social\youtube.png" width="30" alt="youtube"></a></li>
+       </ul>
+    </section>
+    <section class="footer-bottom">
+        <p>Copyright ©;2023 CinnamonHotels. designed by Ruchira</p>
+    </section>
+    <!--Refference
+www.cinnamonhotels.com. (n.d.). Hikkaduwa Resort | Stay at Hikka Tranz by Cinnamon. [online] Available at: https://www.cinnamonhotels.com/hikkatranzcinnamon/stay#rooms [Accessed 26 Aug. 2023].
+-->
+ </footer>
+ <!--Scroll up button-->
+ <a href="#" class="scroll-up-bt"><img src="Resource\Social\scrlup.png" width="4%" alt="scroll up"></a>
+</body>
+</html>
